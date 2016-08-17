@@ -21,9 +21,9 @@
 
 			// Previous/next page navigation.
 			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'fiftyboilerplate' ),
-				'next_text'          => __( 'Next page', 'fiftyboilerplate' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'fiftyboilerplate' ) . ' </span>',
+				'prev_text'          => __( 'Previous page', 'boilerplate' ),
+				'next_text'          => __( 'Next page', 'boilerplate' ),
+				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'boilerplate' ) . ' </span>',
 			) );
 
 		// If no content, include the "No posts found" template.

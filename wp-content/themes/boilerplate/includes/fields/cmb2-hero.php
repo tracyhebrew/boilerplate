@@ -1,13 +1,13 @@
 <?php
 
-add_action( 'cmb2_admin_init', 'fiftyboilerplate_hero_metabox' );
+add_action( 'cmb2_admin_init', 'boilerplate_hero_metabox' );
 /**
  * Define the metabox and field configurations.
  */
-function fiftyboilerplate_hero_metabox() {
+function boilerplate_hero_metabox() {
 
   // Start with an underscore to hide fields from custom fields list
-  $prefix = '_fiftyboilerplate_';
+  $prefix = '_boilerplate_';
 
   /**
    * Initiate the metabox

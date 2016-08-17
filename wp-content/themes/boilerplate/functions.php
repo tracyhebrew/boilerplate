@@ -1,10 +1,10 @@
 <?php
 /**
- * Fifty Boilerplate functions and definitions 
+ * Boilerplate functions and definitions 
  *
  * @package WordPress
- * @subpackage Fifty Boilerplate
- * @since Fifty Boilerplate 1.0
+ * @subpackage Boilerplate
+ * @since Boilerplate 1.0
  */
 
 if ( ! isset( $content_width ) ) {
@@ -14,12 +14,12 @@ if ( ! isset( $content_width ) ) {
 /**
  * Define the version in case we need to do version checks. 
  */
-if ( ! defined( 'FIFTYBOILERPLATE_VERSION' ) )
-  define( 'FIFTYBOILERPLATE_VERSION', '1.0' );
+if ( ! defined( 'BOILERPLATE_VERSION' ) )
+  define( 'BOILERPLATE_VERSION', '1.0' );
 
 
 
-if ( ! function_exists( 'fiftyboilerplate_setup' ) ) :
+if ( ! function_exists( 'boilerplate_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -27,17 +27,17 @@ if ( ! function_exists( 'fiftyboilerplate_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  *
- * @since Fifty Boilerplate 1.0
+ * @since Boilerplate 1.0
  */
-function fiftyboilerplate_setup() {
+function boilerplate_setup() {
 
   /*
    * Make theme available for translation.
    * Translations can be filed in the /languages/ directory.
-   * If you're building a theme based on fiftyboilerplate, use a find and replace
-   * to change 'fiftyboilerplate' to the name of your theme in all the template files
+   * If you're building a theme based on boilerplate, use a find and replace
+   * to change 'boilerplate' to the name of your theme in all the template files
    */
-  load_theme_textdomain( 'fiftyboilerplate', get_template_directory() . '/languages' );
+  load_theme_textdomain( 'boilerplate', get_template_directory() . '/languages' );
 
   // Add default posts and comments RSS feed links to head.
   add_theme_support( 'automatic-feed-links' );
@@ -67,8 +67,8 @@ function fiftyboilerplate_setup() {
    * Menus
    */
   register_nav_menus( array(
-    'main_menu'          => __( 'Main Menu', 'fiftyboilerplate' ),
-    'footer_menu'        => __( 'Footer Menu', 'fiftyboilerplate' ),
+    'main_menu'          => __( 'Main Menu', 'boilerplate' ),
+    'footer_menu'        => __( 'Footer Menu', 'boilerplate' ),
   ) );
 
 
@@ -81,8 +81,8 @@ function fiftyboilerplate_setup() {
   ) );
 
 }
-endif; // fiftyboilerplate_setup
-add_action( 'after_setup_theme', 'fiftyboilerplate_setup' );
+endif; // boilerplate_setup
+add_action( 'after_setup_theme', 'boilerplate_setup' );
 
 
 
@@ -90,7 +90,7 @@ add_action( 'after_setup_theme', 'fiftyboilerplate_setup' );
  * Include files using the init.
  * @return [type] [description]
  */
-function fiftyboilerplate_init()
+function boilerplate_init()
 {
   // Load Scripts
   require_once get_stylesheet_directory() . '/includes/scripts.php';
@@ -106,4 +106,4 @@ function fiftyboilerplate_init()
   // require_once get_stylesheet_directory() . '/includes/cmb2-misc.php';
   // require_once get_stylesheet_directory() . '/includes/cmb2-options-page.php';    
 }
-add_action( 'init', 'fiftyboilerplate_init' );
+add_action( 'init', 'boilerplate_init' );

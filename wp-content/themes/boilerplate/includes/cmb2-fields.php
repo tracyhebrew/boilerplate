@@ -1,10 +1,10 @@
 <?php
 /**
- * Fifty Boilerplate functions and definitions
+ * Boilerplate functions and definitions
  *
  * @package WordPress
- * @subpackage Fifty Boilerplate
- * @since Fifty Boilerplate 1.0
+ * @subpackage Boilerplate
+ * @since Boilerplate 1.0
  * @link https://github.com/WebDevStudios/CMB2
  */
 

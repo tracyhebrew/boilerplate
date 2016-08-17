@@ -3,19 +3,19 @@
  * CMB2 Theme Options
  * @version 0.1.0
  */
-class Fiftyboilerplate_Fields {
+class Boilerplate_Fields {
 
   /**
    * Option key, and option page slug
    * @var string
    */
-  private $key = 'fiftyboilerplate_options';
+  private $key = 'boilerplate_options';
 
   /**
    * Options page metabox id
    * @var string
    */
-  private $metabox_id = 'fiftyboilerplate_option_metabox';
+  private $metabox_id = 'boilerplate_option_metabox';
 
   /**
    * Options Page title
@@ -129,14 +129,14 @@ class Fiftyboilerplate_Fields {
 
 
 /**
- * Helper function to get/return the Fiftyboilerplate_Fields object
+ * Helper function to get/return the Boilerplate_Fields object
  * @since  0.1.0
- * @return Fiftyboilerplate_Fields object
+ * @return Boilerplate_Fields object
  */
-function fiftyboilerplate_admin() {
+function boilerplate_admin() {
   static $object = null;
   if ( is_null( $object ) ) {
-    $object = new Fiftyboilerplate_Fields();
+    $object = new Boilerplate_Fields();
     $object->hooks();
   }
 
@@ -149,9 +149,9 @@ function fiftyboilerplate_admin() {
  * @param  string  $key Options array key
  * @return mixed        Option value
  */
-function fiftyboilerplate_get_option( $key = '' ) {
-  return cmb2_get_option( fiftyboilerplate_admin()->key, $key );
+function boilerplate_get_option( $key = '' ) {
+  return cmb2_get_option( boilerplate_admin()->key, $key );
 }
 
 // Get it started
-fiftyboilerplate_admin();
+boilerplate_admin();

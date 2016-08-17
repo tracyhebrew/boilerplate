@@ -2,7 +2,7 @@
 /**
  * CMB2 Custom styles
  */
-function fiftyboilerplate_cmb2_custom_styles() {
+function boilerplate_cmb2_custom_styles() {
 	echo '<style type="text/css">
 
 	#advanced-sortables {
@@ -69,5 +69,5 @@ function fiftyboilerplate_cmb2_custom_styles() {
 	}
  </style>';
 }
-add_action('admin_head', 'fiftyboilerplate_cmb2_custom_styles');
+add_action('admin_head', 'boilerplate_cmb2_custom_styles');
 

@@ -1,7 +1,7 @@
 {
 	"name": "boilerplate-html",
 	"version": "0.0.0",
-	"description": "Fifty Boilerplate HTML static site",
+	"description": "Boilerplate HTML static site",
 	"main": "gulpfile.js",
 	"dependencies": {
 	"connect-livereload": "*",

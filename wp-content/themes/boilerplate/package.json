@@ -1,7 +1,7 @@
 {
-  "name": "fiftyboilerplate",
+  "name": "boilerplate",
   "version": "0.0.0",
-  "description": "Fifty 2016 Boilerplate: Static site + WP Theme",
+  "description": "2016 Boilerplate: Static site + WP Theme",
   "main": "gulpfile.js",
   "dependencies": {
     "connect-livereload": "*",
